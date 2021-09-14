@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Go Beyond</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        .body {
+            font-family: Arial;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Banner/logo Title */
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            background: black;
+            flex-wrap: wrap;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            text-decoration-color: black;
+            background-color: #333;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Main column */
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Newsletter */
+        .Newsletter {
+            display: flex;
+            justify-content: center;
+            background: #ddd;
+            flex-wrap: wrap;
+        }
+
+        .button1 {
+            background-color: #008CBA;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: #21b37b;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            background: black;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: white;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <!-- Note -->
+    <div class="header">
+        <a href="https://www.corebiz.ag/pt/"><img
+                src="https://latamlist.com/wp-content/uploads/2019/07/visuals-000387205037-PDrYbe-original-1.jpg"
+                width="135" height="49"></a>
+        <!-- Navigation Bar -->
+        <div class="navbar" ;>
+            <a href="#">Home</a>
+            <a href="#">Categoria 1</a>
+            <a href="#">Categoria 2</a>
+            <a href="#">Contato</a>
+        </div>
+        <form action="/action_page.php">
+            <label for="fname">O que está procurando?</label><br>
+            <input type="text" id="fname" name="fname" value="nome do produto"><br>
+        </form>
+        <div>Minha Conta</div>
+        <div>Carrinho</div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div>
+            <p style="font-size:160%; color:white;"> Faça sua compra com mais <br>facilidade e segurança</p>
+            <p style=" font-size:160%; color:#008CBA;"> 1% de Cashback</p>
+            <p style=" font-size:160%; color:#008CBA;">Pagamento por aproximação</p>
+            <p style=" font-size:160%; color:#008CBA;">Frete grátis</p>
+        </div>
+        <img src="http://guedert.adv.br/wp-content/uploads/2017/10/guedert-advogados-cartao-de-credito.png">
+    </div>
+
+
+    <!-- Products -->
+    <h2 style="text-align:center;"> Mais vendidos</h2>
+    <div class="main">
+        <div>
+            <img style="max-width: 200px; height: auto;"
+                src="https://netcomputadores.com.br/dbimg/produtos/ca_9011135_na_33978_m.jpg">
+            <p style="font-size:20px; color:black;"> Headset Corsair</p>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+            <p style=" font-size:80%; color:grey;">de R$599,90</p>
+            <p style=" font-size:120%; color:black;"><b>por R$399,90</b></p>
+            <p style=" font-size:80%; color:grey;">ou 10x 39,99</p>
+            <button class="button button2">Comprar</button>
+
+        </div>
+
+        <div>
+            <img style="max-width: 200px; height: auto;"
+                src="https://http2.mlstatic.com/D_NQ_NP_790154-MLA45255550763_032021-O.jpg">
+            <p style="font-size:20px; color:black;"> Google Home</p>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+            <p style=" font-size:80%; color:grey;">de R$299,90</p>
+            <p style=" font-size:120%; color:black;"><b>por R$199,90</b></p>
+            <p style=" font-size:80%; color:grey;">ou 10x 19,99</p>
+            <button class="button button2">Comprar</button>
+        </div>
+
+        <div>
+            <img style="max-width: 200px; height: auto;"
+                src="https://img.directindustry.com/images_di/projects/images-g/prusa-research-brings-material-production-in-house-prusament-filament-86181-13076415.jpg">
+            <p style="font-size:20px; color:black;">Filamento 3D</p>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+            <p style=" font-size:80%; color:grey;">de R$129,90</p>
+            <p style=" font-size:120%; color:black;"><b>por R$99,90</b></p>
+            <p style=" font-size:80%; color:grey;">ou 10x 9,99</p>
+            <button class="button button2">Comprar</button>
+        </div>
+
+        <div>
+            <img style="max-width: 200px; height: auto;"
+                src="https://cobasi.vteximg.com.br/arquivos/ids/283804-1000-1000/Racao-para-Gatos-Castrados-Golden-Selecao-Natural-Frango-com-Abobora-e-Alecrim-3kg.jpg">
+            <p style="font-size:20px; color:black;">Ração para gatos</p>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+            <p style=" font-size:80%; color:grey;">de R$69,90</p>
+            <p style=" font-size:120%; color:black;"><b>por R$49,90</b></p>
+            <p style=" font-size:80%; color:grey;">ou 10x 4,99</p>
+            <button class="button button2">Comprar</button>
+        </div>
+
+        <div>
+            <img style="max-width: 200px; height: auto;"
+                src="https://www.datacillcom.com.br/store/img/prod/raspberry-pi-4-model-b-4gb-ram_21210.jpg">
+            <p style="font-size:20px; color:black;">Rspberry Pi 4</p>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+            <p style=" font-size:80%; color:grey;">de R$899,90</p>
+            <p style=" font-size:120%; color:black;"><b>por R$699,90</b></p>
+            <p style=" font-size:80%; color:grey;">ou 10x 69,99</p>
+            <button class="button button2">Comprar</button>
+        </div>
+
+    </div>
+
+
+    <!-- Newsletter -->
+    <h2 style="text-align:center;">Inscreva-se para receber as promoções e novidades!</h2>
+    <div class="Newsletter">
+        <form action="/action_page.php">
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname" value="Digite seu nome"><br>
+        </form>
+        <form action="/action_page.php">
+            <label for="fname">E-mail:</label><br>
+            <input type="text" id="fname" name="fname" value="Digite seu e-mail"><br>
+        </form>
+        <button class="button button1">Inscreva-se</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <p style="font-size:22px; color:white;"> Localização </p>
+            <p style=" font-size:15px; color:gray;"> Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+            <p style=" font-size:15px; color:gray;"> Alphavile SP</p>
+            <p style=" font-size:15px; color:gray;"> brasil@corebiz.ag</p>
+            <p style=" font-size:15px; color:gray;"> +55 11 3090 1039</p>
+        </div>
+        <div>
+            <p style=" font-size:15px; color:gray;"> Entre em contato</p>
+            <button class="button button1">Fale conosco</button>
+        </div>
+        <div>
+            <p style="font-size:12px; color:white;"> Created by:</p>
+            <p style="font-size:12px; color:white;"> <a href="https://www.linkedin.com/in/allan-alegretti/">Allan M
+                    Alegretti</a></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
